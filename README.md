@@ -14,7 +14,7 @@ A production-ready Bitly-style URL shortening service built entirely on AWS serv
 
 Built a scalable, cost-effective URL shortening service to learn AWS serverless architecture, RESTful API design, and full-stack development on the cloud.
 
-**Live Application:** [http://your-s3-url.com](http://your-s3-url.com)
+**Live Application:** [URL Shortener]([http://your-s3-url.com](https://url-shortener-frontend-1003.s3.us-east-1.amazonaws.com/index.html))
 
 ---
 
@@ -30,7 +30,7 @@ Built a scalable, cost-effective URL shortening service to learn AWS serverless 
        └────── Request ──────┴───── Process ──────┴─── Store/Retrieve ─┘
 ```
 
-![Architecture Diagram](screenshots/s1.png)
+![Architecture Diagram](screenshots/s1.PNG)
 
 ### Tech Stack
 
