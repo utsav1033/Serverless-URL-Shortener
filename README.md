@@ -163,7 +163,6 @@ aws lambda create-function \
 4. Set bucket policy for public read access
 5. Update API URL in JavaScript
 
-**Detailed instructions:** See [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ---
 
