@@ -1,4 +1,4 @@
-# 🔗 Serverless URL Shortener
+# 🔗 Serverless URL Shortener on AWS Lambda
 
 A production-ready Bitly-style URL shortening service built entirely on AWS serverless architecture.
 
@@ -30,7 +30,7 @@ Built a scalable, cost-effective URL shortening service to learn AWS serverless 
        └────── Request ──────┴───── Process ──────┴─── Store/Retrieve ─┘
 ```
 
-![Architecture Diagram](screenshots/01-architecture.png)
+![Architecture Diagram](screenshots/s1.png)
 
 ### Tech Stack
 
@@ -50,13 +50,13 @@ Built a scalable, cost-effective URL shortening service to learn AWS serverless 
 
 ## ✨ Features
 
-- ✅ **Generate short URLs** - Random 6-character alphanumeric codes
-- ✅ **Collision handling** - Automatic retry with exponential backoff
-- ✅ **Fast redirects** - 301 permanent redirects with <100ms latency
-- ✅ **Click analytics** - Track clicks and last access timestamps
-- ✅ **CORS enabled** - Cross-origin requests supported
-- ✅ **Scalable** - Auto-scales with AWS serverless architecture
-- ✅ **Cost-efficient** - $0/month on AWS Free Tier
+-  **Generate short URLs** - Random 6-character alphanumeric codes
+-  **Collision handling** - Automatic retry with exponential backoff
+-  **Fast redirects** - 301 permanent redirects with <100ms latency
+-  **Click analytics** - Track clicks and last access timestamps
+-  **CORS enabled** - Cross-origin requests supported
+-  **Scalable** - Auto-scales with AWS serverless architecture
+-  **Cost-efficient** - $0/month on AWS Free Tier
 
 ---
 
@@ -64,7 +64,7 @@ Built a scalable, cost-effective URL shortening service to learn AWS serverless 
 
 ### Base URL
 ```
-https://YOUR-API-ID.execute-api.us-east-1.amazonaws.com/prod
+(https://5c0xe600v5.execute-api.us-east-1.amazonaws.com/prod)
 ```
 
 ### Endpoints
@@ -109,7 +109,7 @@ GET /{shortCode}
 | `createdAt` | Number | Unix timestamp |
 | `lastAccessed` | Number | Last redirect timestamp |
 
-![DynamoDB Table](screenshots/02-dynamodb-table.png)
+![DynamoDB Table](screenshots/s2.png)
 
 ---
 
@@ -187,7 +187,7 @@ curl -I https://YOUR-API-URL/prod/abc123
 2. Update environment variable `BASE_URL`
 3. Run tests
 
-![Postman Test](screenshots/06-postman-test.png)
+![Postman Test](screenshots/s6.png)
 
 ---
 
@@ -198,36 +198,42 @@ curl -I https://YOUR-API-URL/prod/abc123
 - **Availability:** 99.9% (AWS SLA)
 - **Cost:** $0.00/month for <1M requests (Free Tier)
 
-![CloudWatch Metrics](screenshots/12-cloudwatch-logs.png)
+![CloudWatch Metrics](screenshots/s12.png)
 
 ---
 
 ## 📸 Screenshots
 
 ### Lambda Function Code
-![Lambda Code](screenshots/03-lambda-code.png)
+![Lambda Code](screenshots/s3.png)
+![Lambda Code](screenshots/s3.2.png)
+![Lambda Code](screenshots/s3.3.png)
+![Lambda Code](screenshots/s3.4.png)
+![Lambda Code](screenshots/s3.5.png)
+
+
 
 ### API Gateway Configuration
-![API Gateway](screenshots/04-api-gateway.png)
+![API Gateway](screenshots/s4.png)
 
 ### Frontend UI
-![Frontend Empty](screenshots/10-frontend-empty.png)
-![Frontend Result](screenshots/11-frontend-result.png)
+![Frontend Empty](screenshots/s10.png)
+![Frontend Result](screenshots/s11.png)
 
 ### Working Redirect
-![Redirect Flow](screenshots/07-redirect-before.png)
+![Redirect Flow](screenshots/s7.png)
 
 ---
 
 ## 💡 Key Learnings
 
 ### Technical Skills
-- ✅ **Serverless Architecture** - Event-driven, auto-scaling compute
-- ✅ **RESTful API Design** - Proper HTTP methods, status codes, CORS
-- ✅ **NoSQL Data Modeling** - Single-table design with DynamoDB
-- ✅ **AWS Service Integration** - Lambda, API Gateway, DynamoDB, S3, IAM
-- ✅ **Error Handling** - Retry logic, collision resolution, graceful failures
-- ✅ **Security Best Practices** - IAM roles, least privilege, input validation
+-  **Serverless Architecture** - Event-driven, auto-scaling compute
+-  **RESTful API Design** - Proper HTTP methods, status codes, CORS
+-  **NoSQL Data Modeling** - Single-table design with DynamoDB
+-  **AWS Service Integration** - Lambda, API Gateway, DynamoDB, S3, IAM
+-  **Error Handling** - Retry logic, collision resolution, graceful failures
+-  **Security Best Practices** - IAM roles, least privilege, input validation
 
 ### Architecture Patterns
 - Lambda proxy integration for API Gateway
@@ -308,20 +314,12 @@ This is a portfolio project, but suggestions are welcome!
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👤 Author
 
-**Your Name**
+**Utsav Khairnar**
 
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Portfolio: [yourwebsite.com](https://yourwebsite.com)
-- Email: your.email@example.com
+- GitHub: [@utsav1033](https://github.com/utsav1033)
+- Email: utsavkhairnar14@gmail.com
 
 ---
 
