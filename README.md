@@ -1,4 +1,4 @@
-# 🔗 Serverless URL Shortener on AWS Lambda
+# 🔗 Serverless URL Shortener on AWS 
 
 A production-ready Bitly-style URL shortening service built entirely on AWS serverless architecture.
 
