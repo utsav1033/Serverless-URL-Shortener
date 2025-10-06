@@ -14,7 +14,7 @@ A production-ready Bitly-style URL shortening service built entirely on AWS serv
 
 Built a scalable, cost-effective URL shortening service to learn AWS serverless architecture, RESTful API design, and full-stack development on the cloud.
 
-**Live Application:** [URL Shortener]([http://your-s3-url.com](https://url-shortener-frontend-1003.s3.us-east-1.amazonaws.com/index.html))
+**Live Application:** [http://your-s3-url.com](https://url-shortener-frontend-1003.s3.us-east-1.amazonaws.com/index.html]([http://your-s3-url.com](https://url-shortener-frontend-1003.s3.us-east-1.amazonaws.com/index.html))
 
 ---
 
@@ -30,7 +30,6 @@ Built a scalable, cost-effective URL shortening service to learn AWS serverless 
        └────── Request ──────┴───── Process ──────┴─── Store/Retrieve ─┘
 ```
 
-![Architecture Diagram](screenshots/s1.PNG)
 
 ### Tech Stack
 
@@ -109,7 +108,7 @@ GET /{shortCode}
 | `createdAt` | Number | Unix timestamp |
 | `lastAccessed` | Number | Last redirect timestamp |
 
-![DynamoDB Table](screenshots/s2.png)
+![DynamoDB Table](screenshots/s2.PNG)
 
 ---
 
@@ -182,12 +181,8 @@ curl -I https://YOUR-API-URL/prod/abc123
 # Should return 301 with Location header
 ```
 
-### Test with Postman
-1. Import collection from `postman_collection.json`
-2. Update environment variable `BASE_URL`
-3. Run tests
 
-![Postman Test](screenshots/s6.png)
+![cURL Test](screenshots/s6.PNG)
 
 ---
 
@@ -198,30 +193,30 @@ curl -I https://YOUR-API-URL/prod/abc123
 - **Availability:** 99.9% (AWS SLA)
 - **Cost:** $0.00/month for <1M requests (Free Tier)
 
-![CloudWatch Metrics](screenshots/s12.png)
+![CloudWatch Metrics](screenshots/s12.PNG)
 
 ---
 
 ## 📸 Screenshots
 
 ### Lambda Function Code
-![Lambda Code](screenshots/s3.png)
-![Lambda Code](screenshots/s3.2.png)
-![Lambda Code](screenshots/s3.3.png)
-![Lambda Code](screenshots/s3.4.png)
-![Lambda Code](screenshots/s3.5.png)
+![Lambda Code](screenshots/s3.PNG)
+![Lambda Code](screenshots/s3.2.PNG)
+![Lambda Code](screenshots/s3.3.PNG)
+![Lambda Code](screenshots/s3.4.PNG)
+![Lambda Code](screenshots/s3.5.PNG)
 
 
 
 ### API Gateway Configuration
-![API Gateway](screenshots/s4.png)
+![API Gateway](screenshots/s4.PNG)
 
 ### Frontend UI
-![Frontend Empty](screenshots/s10.png)
-![Frontend Result](screenshots/s11.png)
+![Frontend Empty](screenshots/s10.PNG)
+![Frontend Result](screenshots/s11.PNG)
 
 ### Working Redirect
-![Redirect Flow](screenshots/s7.png)
+![Redirect Flow](screenshots/s7.PNG)
 
 ---
 
